@@ -125,10 +125,6 @@ body {
   gap: 40px;
 }
 
-/* .menu-item:not(:last-child) {
-  margin-right: 40px;
-} */
-
 .menu-link {
   padding: 24px 0;
   font-weight: 500;
@@ -154,10 +150,6 @@ body {
   align-items: center;
   gap: 40px;
 }
-
-/* .contacts-item:not(:last-child) {
-  margin-right: 40px;
-} */
 
 .contacts-link {
   font-size: 16px;
@@ -195,11 +187,10 @@ body {
 
 .order-service-link {
   display: block;
+  margin: 0 auto;
   min-width: 169px;
   height: 56px;
   border: none;
-  margin: 0 auto 0 auto;
-
   padding: 16px 32px;
   font-family: Roboto, sans-serif;
   font-weight: 500;
