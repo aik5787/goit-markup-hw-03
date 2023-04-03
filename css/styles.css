@@ -123,11 +123,6 @@ body {
   display: flex;
   align-items: center;
   gap: 40px;
-  /* padding: 24px 0; */
-}
-
-.menu-item {
-  padding: 24px 0;
 }
 
 /* .menu-item:not(:last-child) {
@@ -135,6 +130,7 @@ body {
 } */
 
 .menu-link {
+  padding: 24px 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -188,7 +184,7 @@ body {
 }
 .hero-title {
   max-width: 496px;
-  margin-bottom: 48px;
+  margin: 0 auto 48px;
 
   font-weight: 700;
   font-size: 56px;
