@@ -37,6 +37,7 @@ img {
   --header-background-color: #ffffff;
   --footer-background-color: #2e2f42;
   --section-background-color: #f4f4fd;
+  --img-background-color: #ffffff;
 
   --logo-color-first-part: #4d5ae5;
   --logo-color-second-part: #2e2f42;
@@ -56,6 +57,7 @@ img {
   --button-filter-background-color: #f4f4fd;
   --button-filter-background-hover-focus-color: #404bbf;
   --button-filter-text-hover-focus-color: #ffffff;
+  --border-button-filter: #e7e9fc;
 }
 
 /* Body */
@@ -96,6 +98,7 @@ body {
 .navigation {
   display: flex;
   align-items: center;
+  margin-right: auto;
 }
 /* Logo */
 
@@ -119,11 +122,17 @@ body {
 .menu {
   display: flex;
   align-items: center;
+  gap: 40px;
+  /* padding: 24px 0; */
 }
 
-.menu-item:not(:last-child) {
-  margin-right: 40px;
+.menu-item {
+  padding: 24px 0;
 }
+
+/* .menu-item:not(:last-child) {
+  margin-right: 40px;
+} */
 
 .menu-link {
   font-weight: 500;
@@ -142,17 +151,17 @@ body {
 
 .address {
   font-style: normal;
-  margin-left: auto;
 }
 
 .contacts {
   display: flex;
   align-items: center;
+  gap: 40px;
 }
 
-.contacts-item:not(:last-child) {
+/* .contacts-item:not(:last-child) {
   margin-right: 40px;
-}
+} */
 
 .contacts-link {
   font-size: 16px;
@@ -178,6 +187,7 @@ body {
   text-align: center;
 }
 .hero-title {
+  max-width: 496px;
   margin-bottom: 48px;
 
   font-weight: 700;
@@ -188,6 +198,12 @@ body {
 }
 
 .order-service-link {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  margin: 0 auto;
+
   padding: 16px 32px;
   font-family: Roboto, sans-serif;
   font-weight: 500;
@@ -281,7 +297,7 @@ body {
 }
 
 .example {
-  background-color: #ffffff;
+  background-color: var(--img-background-color);
 }
 
 .card-description {
@@ -319,6 +335,9 @@ body {
 
 /* Portfolio */
 
+.portfolio-section {
+  padding: 96px 120px;
+}
 .filter-list {
   display: flex;
   flex-wrap: wrap;
@@ -328,6 +347,10 @@ body {
 }
 
 .button-filter {
+  padding: 12px 24px;
+  border: 1px solid var(--border-button-filter);
+  border-radius: 4px;
+
   font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -342,6 +365,7 @@ body {
 .button-filter:focus {
   color: var(--button-filter-text-hover-focus-color);
   background-color: var(--button-filter-background-hover-focus-color);
+  border: 1px solid transparent;
 }
 
 .portfolio-list {
@@ -359,4 +383,5 @@ body {
   padding: 32px 16px;
   align-items: flex-start;
   border: 1px solid #e7e9fc;
+  border-top: none;
 }
