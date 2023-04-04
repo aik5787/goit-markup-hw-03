@@ -185,11 +185,9 @@ body {
   color: var(--hero-title-color);
 }
 
-.margin-hero-button {
-  margin: auto;
-}
 .order-service-link {
   display: block;
+  margin: 0 auto;
   min-width: 169px;
   height: 56px;
   border: none;
